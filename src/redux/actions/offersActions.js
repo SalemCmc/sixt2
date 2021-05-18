@@ -1,0 +1,37 @@
+
+import { GET_OFFERS, SET_OFFERS_SEARCH_LOADING, CLOSE_MODAL } from './types';
+import { post } from '../../webAPI/index'
+import { toast } from 'react-toastify';
+
+export   const getOffers = (offer, searchParams) => dispatch => {  
+
+    dispatch({ type: SET_OFFERS_SEARCH_LOADING });
+
+    post("offers",offer).then(data =>
+    {
+        dispatch({type: GET_OFFERS, offers: filterOffers(data),searchParams: searchParams });    
+    })
+}
+
+const filterOffers = (offers) =>
+{
+    let filteredOffers=offers.filter(element => (element.vehicleType.name === "FIRST_CLASS" || element.vehicleType.name === "BUSINESS_VAN") );
+    return filteredOffers;
+}
+
+
+export   const bookOffer = (newOffer) => dispatch => 
+{  
+	//simulation of api waiting...
+	setTimeout(()=>{ 
+		toast.success("You have successfully booked the offer!",{"autoClose": 10000});
+		dispatch({type: CLOSE_MODAL})
+	}, 2000);
+
+}
+
+
+
+
+
+
