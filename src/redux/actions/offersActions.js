@@ -20,7 +20,7 @@ const filterOffers = (offers) =>
 }
 
 
-export   const bookOffer1 = (newOffer) => dispatch => 
+export   const bookOffer = (newOffer) => dispatch => 
 {  
 	//simulation of api waiting...
 	setTimeout(()=>{ 
@@ -29,7 +29,7 @@ export   const bookOffer1 = (newOffer) => dispatch =>
 	}, 2000);
 
 }
-export   const bookOffer2 = (newOffer) => dispatch => 
+export   const bookOfferCONFLICTO = (newOffer) => dispatch => 
 {  
 	//simulation of api waiting...
 	setTimeout(()=>{ 
