@@ -35,6 +35,7 @@ export   const bookOffer = (newOffer) => dispatch =>
 // ovo je dodato lokalno
 // opet dodato lokalno
 // opet dodato lokalno
+// dodato kroz gitHub online editor
 
 
 
