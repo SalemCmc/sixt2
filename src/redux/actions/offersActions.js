@@ -30,6 +30,7 @@ export   const bookOffer = (newOffer) => dispatch =>
 
 }
 
+// ovo je izmjena za git...
 
 
 

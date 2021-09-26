@@ -5,4 +5,6 @@ export const SET_OFFERS_SEARCH_LOADING = 'SET_OFFERS_SEARCH_LOADING'
 export const SHOW_MODAL = 'SHOW_MODAL'  
 export const CLOSE_MODAL = 'CLOSE_MODAL'
 
+// ovo je druga izmjena za git
+
 
