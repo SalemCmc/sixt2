@@ -20,7 +20,7 @@ const filterOffers = (offers) =>
 }
 
 
-export   const bookOffer = (newOffer) => dispatch => 
+export   const bookOffer1 = (newOffer) => dispatch => 
 {  
 	//simulation of api waiting...
 	setTimeout(()=>{ 
@@ -29,6 +29,16 @@ export   const bookOffer = (newOffer) => dispatch =>
 	}, 2000);
 
 }
+export   const bookOffer2 = (newOffer) => dispatch => 
+{  
+	//simulation of api waiting...
+	setTimeout(()=>{ 
+		toast.success("You have successfully booked the offer!",{"autoClose": 10000});
+		dispatch({type: CLOSE_MODAL})
+	}, 2000);
+
+}
+
 
 // ovo je izmjena za git...
 // ovo je editovano kroz gitHUB online editor.
