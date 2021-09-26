@@ -32,6 +32,7 @@ export   const bookOffer = (newOffer) => dispatch =>
 
 // ovo je izmjena za git...
 // ovo je editovano kroz gitHUB online editor.
+// ovo je dodato lokalno
 
 
 
